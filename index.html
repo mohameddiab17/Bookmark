@@ -1,0 +1,77 @@
+<html>
+<head>
+    <title>Bookmark</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    
+
+    <section id="home" class="container position-relative">
+
+        <!-- <div class="valid position-absolute">
+            <p class="fw-bold pb-3 fs-6">Site Name or Url is not valid, Please follow the rules below :</p>
+            <ol>
+                <li>
+                    <i class="fa-solid fa-arrow-right pe-2 pb-3"></i>Site name must contain at least 3 characters
+                </li>
+                <li>
+                    <i class="fa-solid fa-arrow-right pe-2"></i>Site name must contain at least 3 characters
+                </li>
+            </ol>
+        </div> -->
+
+        <div class="home-titles d-flex justify-content-center dotted-border align-items-center  flex-column">
+        <h1  class="text-center my-5 fit_contant">Bookmarker</h1>
+        </div>
+
+        <div class=" border-none">
+            <h2 class=" py-3 text-center  ">
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+
+            <label for="siteName" class="fw-semibold pb-2">
+                <i class="fa-solid fa-book-bookmark"></i>
+                Site Name
+            </label>
+            <input type="text" id="siteName" class="w-100 form-control " placeholder="Bookmark Name">
+            <p class="text-danger pb-3 d-none" id="wrongUrlName">Name Is Not Valid (Start with Capital)</p>
+
+            <label for="siteUrl" class="fw-semibold pb-2 mt-4">
+                <i class="fa-solid fa-link"></i>
+                Site Url
+            </label>
+            <input type="text" id="siteUrl" class="w-100 form-control  " placeholder="Bookmark Url">
+            <p class="text-danger pb-3 d-none" id="wrongUrlSite">Url Is Not Valid (Start With WWW.)</p>
+
+        </div>
+        <div class="btn-submit d-flex justify-content-center py-4 mb-3 dotted-border">
+            <button onclick="addSite()  " class="btn btn-danger text-center px-5  ">Submit</button>
+        </div>
+
+        <table class="table text-center ">
+
+            <thead>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </thead>
+
+            <tbody id="tBody">
+                <i class="fa-vi"></i>
+            </tbody>
+
+        </table>
+    </section>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
+
