@@ -17,4 +17,3 @@ A minimalist and functional web application designed to help users save, organiz
 
 ---
 
-Let me know if you need a LinkedIn post or additional details for this project!
